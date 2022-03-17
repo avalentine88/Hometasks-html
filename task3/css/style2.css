@@ -1,0 +1,26 @@
+
+div > h2 {
+	text-align: center;
+}
+
+.text2 {
+	font-weight: bold;
+	color: #D50000;
+}
+
+.text {
+	text-transform: uppercase; 
+	font-weight: bold;
+	color: #D50000;
+}
+
+
+a {
+	color: #DD2C00;
+	text-decoration: none;
+}
+
+.text3 {
+	text-decoration: line-through;
+	text-decoration-color: #E91E63;
+}

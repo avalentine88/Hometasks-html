@@ -1,0 +1,39 @@
+a {
+color: #DD2C00;
+text-decoration: none;
+padding: 15px;
+
+}
+
+
+ul {
+ 	list-style-type: none;
+ 	display: block;
+ 	margin: 0px ;
+ 	background-color: #FFA000;
+ 	border-bottom: 3px solid #FFA000;	
+ 	padding-inline-start: 0;
+ 	
+ }
+
+
+li {
+	display: inline;
+	font-size: 20px;
+
+}
+
+.underline {
+	
+	border-bottom: 3px solid #D32F2F;
+}
+
+.none {
+	display: none;
+}
+
+body {
+	margin: 0px ;
+	border-bottom-width: 5px;
+}
+
