@@ -1,5 +1,6 @@
 body {
 	
-	background-image: url(image/waterfall.jpg) fixed;
+	background-image: url(../image/waterfall.jpg);
+	background-attachment: fixed;
 	
 }
