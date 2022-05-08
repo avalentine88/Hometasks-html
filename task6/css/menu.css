@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.row {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0;
+	background-color: rgb(244, 67, 54);
+	list-style-type: none;
+	font-size: 20px;		
+}
+
+a {
+	text-decoration: none;
+	color: rgb(183, 28, 28);
+}
+
+.absolute {
+	position: absolute;
+	background-color: rgb(244, 67, 54);
+	list-style-type: none;
+	padding: 0;
+}
+
+.absolute > li > a {
+	padding: 20px 50px;
+	
+}
+
+.row > li a {
+	display: inline-block;
+	padding: 20px 50px;
+}
