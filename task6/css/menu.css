@@ -20,7 +20,7 @@ a {
 	color: rgb(183, 28, 28);
 }
 
-.absolute { // не получилось по центру пункта 2 разместить
+.absolute { /*  не получилось по центру пункта 2 разместить */
 	position: absolute;
 	background-color: rgb(244, 67, 54);
 	list-style-type: none;
