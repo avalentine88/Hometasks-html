@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.row {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0;
+	background-color: rgb(244, 67, 54);
+	list-style-type: none;
+	font-size: 20px;		
+}
+
+a {
+	text-decoration: none;
+	color: rgb(183, 28, 28);
+}
+
+.absolute { /* не получилось по центру пункта 2 поместить */
+	position: absolute;
+	background-color: rgb(244, 67, 54);
+	list-style-type: none;
+	padding: 0;
+	display: none;
+}
+
+.absolute > li > a {
+	padding: 20px 20px;
+	border-bottom: 4px solid transparent; /* пункты при наведении скачут, не знаю, как убрать */
+
+}
+
+.row > li a {
+	display: inline-block;
+	padding: 20px 70px;
+	border-bottom: 4px solid transparent;
+
+}
+
+ul > li:hover .absolute {
+	display: block;
+	
+}
+
+.row > li a:hover {
+	border-bottom: 3px solid #D50000;
+}

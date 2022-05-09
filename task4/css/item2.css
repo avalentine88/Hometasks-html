@@ -1,7 +1,11 @@
+
 * {
 	box-sizing: border-box;
 }
 
+.container {
+	display: flex;
+}
 .flex {
 	display: flex;
 	flex-direction: column;
@@ -75,6 +79,7 @@ p {
 	background-color: rgb(126, 87, 194);
 	padding: 10px;
 }
+
 header,
 footer {
 	background-color: rgb(126, 87, 194);
@@ -91,30 +96,17 @@ form {
 }
 
 aside {
-	
-	width: 240px;
-	float: left;
-	background-color: rgb(209, 196, 233);
-	height: 1115.5px; /* не поняла, как выровнять по высоте section */
-
-} 
-
-
-
-section {
 	display: flex;
 	flex-direction: column;
-	width: auto;
-	height: 100%;
-	
-	
-}
+	background-color: rgb(209, 196, 233);
+	height: auto; 
+} 
 
 .flex-row {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
-	align-self: stretch;
-	background-color: rgb(237, 231, 246);
+	background-color: rgb(237, 231, 246);	
 }
 
 img {
@@ -129,16 +121,26 @@ img {
 }
 
 .bottom {
-	display: block;
-	align-items; flex-end;
+	margin-top: auto; /* не получилось опустить вниз стоимость */
+}
+
+	
+/* некоторые колонки неравномерно растянулись, наверное, из-за margin, 
+не поняла, как сделать красиво колонки, как у вас */
+.col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
 }
 
 .col-3 {
 	flex: 0 0 25%;
     max-width: 25%;
 }
-
 .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
-}	
+}
+.col-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
