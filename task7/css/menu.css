@@ -10,19 +10,19 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	margin: 0;
-	background-color: rgb(244, 67, 54);
+	background-color: rgb(0, 121, 107);
 	list-style-type: none;
 	font-size: 20px;		
 }
 
 a {
 	text-decoration: none;
-	color: rgb(183, 28, 28);
+	color: white;
 }
 
 .absolute { /* не получилось по центру пункта 2 поместить */
 	position: absolute;
-	background-color: rgb(244, 67, 54);
+	background-color: rgb(0, 121, 107);
 	list-style-type: none;
 	padding: 0;
 	display: none;
@@ -47,5 +47,109 @@ ul > li:hover .absolute {
 }
 
 .row > li a:hover {
-	border-bottom: 3px solid #D50000;
+	border-bottom: 3px solid rgb(62, 39, 35);
+}
+
+.modal-window {
+	display: none;
+	position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 121, 107, .5); 
+}
+
+.modal-window:target {
+	display: block;
+}
+
+
+form {
+	padding: 40px;
+	width: 350px;
+	height: 250px;
+	background-color: rgb(0, 121, 107);
+	border-radius: 2%;
+	transform: translate(-50%, 100%);
+	position: absolute;
+	left: 50%;	
+
+}
+
+
+input[type=password],
+input[type=text] {
+    border-style: none;
+    outline-style: none;
+    border-bottom: 3px solid white;
+    background-color: transparent;
+    width: 250px;
+    margin: 10px;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(62, 39, 35);
+    font-style: italic;
+    font-weight: bold;
+}
+
+input::-moz-placeholder {
+    color: rgb(62, 39, 35);
+    font-style: italic;
+    font-weight: bold;
+}
+
+input::-ms-input-placeholder {
+    color: rgb(62, 39, 35);
+    font-style: italic;
+    font-weight: bold;
+}
+
+input[type=password]:focus,
+input[type=text]:focus {
+    border-color: rgb(62, 39, 35);
+}
+#remember {
+    display: none;
+}
+label::before {
+    content: "\2661";
+}
+#remember:checked + label::before {
+    content: "\2764";
+    
+}
+
+label {
+	color: rgb(62, 39, 35);
+	font-weight: bold;
+	font-size: 20px;
+	margin: 10px;
+
+
+}
+
+input[type=submit] {
+	background-color: white;
+	color: rgb(62, 39, 35);
+	font-weight: bold;
+	text-transform: uppercase;
+	border-style: none;
+    outline-style: none;
+    width: 250px;
+    height: 30px;
+ 	margin: 10px;
+}
+
+.check-box {
+	margin-bottom: 10px;
+	
+}
+
+.close-window {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 20px;
 }
