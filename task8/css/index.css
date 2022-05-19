@@ -1,0 +1,301 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+span {
+    color: rgb(74, 20, 140);
+    display: inline-block;
+    padding: 20px 30px;
+}
+section span {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 0;
+ }
+
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(74, 20, 140);
+}
+
+header a {
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+p {
+    color: rgb(74, 20, 140);
+}
+
+.color {
+    
+    color: rgb(74, 20, 140);
+}
+.flex-box {
+    display: flex;
+
+}
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical a {
+    padding: 20px;
+    align-self: center;
+    
+}
+.category {
+    display: none;
+    text-transform: uppercase;
+   
+}
+.margin {
+    margin: 10px;
+    background-color: rgb(126, 87, 194);
+    padding: 10px;
+}
+
+.margin2 {
+    margin: 10px 0;
+    background-color: rgb(126, 87, 194);
+    padding: 10px;
+}
+
+.margin3 {
+    margin: 0 10px 10px;
+    background-color: rgb(126, 87, 194);
+    padding: 10px;
+}
+
+.margin4 {
+    margin-bottom: 10px;
+    background-color: rgb(126, 87, 194);
+    padding: 10px;
+}
+
+header,
+footer {
+    background-color: rgb(126, 87, 194);
+}
+
+footer {
+    height: 60px;
+}
+
+form {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(209, 196, 233);
+    height: auto; 
+} 
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(237, 231, 246);   
+}
+
+img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.align-items {
+    display: flex;
+    align-content: stretch;
+}
+
+.bottom {
+    margin-top: auto; /* не получилось опустить вниз стоимость */
+}
+
+    
+/* некоторые колонки неравномерно растянулись, наверное, из-за margin, 
+не поняла, как сделать красиво колонки, как у вас */
+.col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+   .container {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        display: block;
+    }
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .links { /*не получилось прижать к левому краю*/
+        margin-left: auto;
+        margin-top: 10px;
+    }
+    .vertical {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .vertical a {
+        margin-right: 20px;
+    }
+
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+     .col-md-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        display: block;
+    }
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .links { /*не получилось прижать к левому краю*/
+        margin-left: auto;
+        margin-top: 10px;
+    }
+    .vertical {
+        display: flex;
+        flex-direction: row;
+    }
+    .vertical a {
+        margin-right: 20px;
+    }
+
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+     .col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 599px){ 
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        display: none;
+    }
+    .flex-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .links,
+    .vertical {
+        display: none;
+        justify-content: center;
+    }
+    .name:hover + .links {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .category {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .links a {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .name {
+        display: inline-block;
+        text-align: center;
+    }
+    .category:hover + .vertical {
+        display: flex;
+        flex-direction: column;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-xs-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+	}
+}	
+
+
+
+
+
