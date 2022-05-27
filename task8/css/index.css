@@ -28,10 +28,14 @@ a {
     color: rgb(74, 20, 140);
 }
 
-header a {
-    display: inline-block;
-    padding: 20px 30px;
+header { 
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    background-color: rgb(126, 87, 194);
+
 }
+
 
 p {
     color: rgb(74, 20, 140);
@@ -43,7 +47,13 @@ p {
 }
 .flex-box {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 
+}
+
+.links > a {
+    padding: 0 20px;
 }
 .vertical {
     display: flex;
@@ -84,13 +94,10 @@ p {
     padding: 10px;
 }
 
-header,
-footer {
-    background-color: rgb(126, 87, 194);
-}
 
 footer {
     height: 60px;
+    background-color: rgb(126, 87, 194);
 }
 
 form {
@@ -161,6 +168,7 @@ img {
     }
     form {
         display: block;
+        margin-right: 20px;
     }
     .flex-box {
         display: flex;
@@ -168,7 +176,7 @@ img {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .links { /*не получилось прижать к левому краю*/
+    .links { 
         margin-left: auto;
         margin-top: 10px;
     }
@@ -207,6 +215,7 @@ img {
     }
     form {
         display: block;
+        margin-right: 10px;
     }
     .flex-box {
         display: flex;
@@ -214,7 +223,7 @@ img {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .links { /*не получилось прижать к левому краю*/
+    .links {
         margin-left: auto;
         margin-top: 10px;
     }
@@ -265,12 +274,13 @@ img {
 
     }
     .category {
+        padding-top: 20px;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
     .links a {
-        padding-top: 20px;
+        padding: 20px 0;
         display: flex;
         justify-content: center;
        
@@ -292,10 +302,5 @@ img {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
-	}
-}	
-
-
-
-
-
+    }
+}   
